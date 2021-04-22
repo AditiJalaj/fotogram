@@ -25,16 +25,7 @@ const useStorage=(file)=>{
             setUrl(url)
         }
         )
-
-        // const deletefromFirebase=(url)=>{
-        //     let pictureRef=projectStorage.refFromURL(url);
-        //     pictureRef.delete().then(()=>{
-        //         setDocs(docs.filter((doc)=>doc!==url))
-        //         alert("picture is deleted successfully")
-        //     }).catch((err)=>{
-        //         console.log(err)
-        //     })
-        // }
+        
         
 
     },[file])
