@@ -22,13 +22,14 @@ body{
   color:rgb(231, 216, 224);
 }
 
-.title h1{
+.title h2{
   color: var(--primary);
   font-size: 1.2rem;
   letter-spacing: 2px;
   font-weight: normal;
+  text-align: center;
 }
-.title h2, .title p{
+.title p{
   text-align: center;
 }
 .title h2{
