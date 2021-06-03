@@ -6,5 +6,6 @@ Features
 3. Delete Photo
 4. Modal for Image
 5. Google Sign In
+6. Dark Mode 
 
 deployed link --> https://musing-dijkstra-d4f9a7.netlify.app/
