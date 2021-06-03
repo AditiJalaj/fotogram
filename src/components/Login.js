@@ -14,6 +14,7 @@ const Login=(props)=>{
         />
         <p className="errorMsg">{emailError}
         </p>
+
         <label>Password</label>
         <input type="password" required
         value={password}

@@ -4,6 +4,9 @@ import {motion} from 'framer-motion'
 const Modal=({selectedImg,setSelectedImg})=>{
 
     const handleClick=(e)=>{
+
+
+        //for closing the modal only on click on backdrop and not the image
         if(e.target.classList.contains('backdrop'))
         {
             setSelectedImg(null)
