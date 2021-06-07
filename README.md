@@ -11,3 +11,14 @@ Features
 Tech Stack- ReactJS, Firebase ( Firestore Database , Storage and Authentication ) , React Hooks, Framer Motion.
 
 Demo --> https://musing-dijkstra-d4f9a7.netlify.app/
+
+
+Upcoming updates -- 
+Scroll to top
+Add save image option
+Change the dark mode to a toggle switch
+Refactor - Add create album feature , show albums on default , rename album, upload to album , delete album enhancement
+Create a liked photo collection
+Add comment feature
+Create private collection for Different users
+Add random image generator and upload
