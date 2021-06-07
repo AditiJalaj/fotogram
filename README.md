@@ -1,4 +1,4 @@
-Checkout Fotogram-  photo respository built with ReactJS, React Custom Hooks for reusability, Firebase for Firestore (realtime database), Storage and User Auth, Framer Motion for Animations.
+ Fotogram- A Photo respository built with ReactJS and Firebase that let's users sign in and upload/view/delete photos.
 
 Features 
 1. Upload Photo with Storage
@@ -8,4 +8,6 @@ Features
 5. Google Sign In
 6. Dark Mode 
 
-deployed link --> https://musing-dijkstra-d4f9a7.netlify.app/
+Tech Stack- ReactJS, Firebase ( Firestore Database , Storage and Authentication ) , React Hooks, Framer Motion.
+
+Demo --> https://musing-dijkstra-d4f9a7.netlify.app/
