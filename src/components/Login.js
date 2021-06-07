@@ -1,14 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Login=(props)=>{
-    const {email,setEmail,password,setPassword,handleLogin,handleSignUp,
-        hasAccount,setHasAccount, emailError, passwordError }=props
+    const {email,setEmail,password,
+        setPassword,handleLogin,handleSignUp,
+        hasAccount,setHasAccount, emailError,
+        passwordError}=props
     
+        const [guestBtnClicked,setguestBtnClicked]=useState(false)
+
+         const handleGuestLogin=()=>{
+             setguestBtnClicked(!guestBtnClicked)
+             setHasAccount(true)
+             setEmail('test@test.com')
+             setPassword('Test@1234')
+             
+         }
+
      return(
         <section className="login">
         <div className="loginContainer">
         <label>Username</label>
-        <input type="text" autoFocus required 
+        <input type="text" 
+        autoFocus required 
         value={email}
         onChange={(e)=>setEmail(e.target.value)}
         />
@@ -16,7 +29,9 @@ const Login=(props)=>{
         </p>
 
         <label>Password</label>
-        <input type="password" required
+        <input type="password" 
+        
+        required
         value={password}
         onChange={(e)=>setPassword(e.target.value)}/>
 
@@ -37,6 +52,10 @@ const Login=(props)=>{
             <span onClick={()=>setHasAccount(!hasAccount)}>Sign In</span></p>
             </>
         )}
+       {!guestBtnClicked &&  <div className="btnContainer">
+        <button onClick={handleGuestLogin}>Guest Login</button>
+        </div>
+        }
         </div>
         </div>
 

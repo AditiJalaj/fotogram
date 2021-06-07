@@ -16,7 +16,6 @@ const ImageGrid=({setSelectedImg})=>{
             //for modal
             onClick={()=>setSelectedImg(doc.url)}>
             
-          
             <motion.img src={doc.url} alt="uploaded image"
              initial={{opacity:0.1}}
              animate={{opacity:1}}

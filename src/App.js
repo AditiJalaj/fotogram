@@ -6,18 +6,22 @@ import Modal from './components/Modal'
 import {useState,useEffect} from 'react'
 import {fire} from './firebase/config'
 import Login from './components/Login'
-import { auth } from './firebase/config';
+
 
 function App() {
   const [user,setUser]=useState('')
   const [email,setEmail]=useState('')
   const [password,setPassword]=useState('')
+  const [hasAccount,setHasAccount]=useState(false)
+
+
   const [emailError,setEmailError]=useState('')
   const [passwordError,setPasswordError]=useState('')
-  const [hasAccount,setHasAccount]=useState(false)
+
+
   const clearInputs=()=>{
     setEmail('')
-    setPasswordError('')
+    setPassword('')
   }
 
   const clearErrors=()=>{
@@ -27,7 +31,7 @@ function App() {
 
   const [selectedImg, setSelectedImg]=useState(null)
 
-
+  
   const handleLogin=()=>{
     clearErrors();
 
@@ -67,7 +71,9 @@ function App() {
   }
 
   const handleLogOut=()=>{
+    
     fire.auth().signOut();
+    clearInputs()
   }
 
   const authListener=()=>{
@@ -99,8 +105,10 @@ function App() {
 
       ):
      (
-      <Login email={email} setEmail={setEmail} 
-      password={password} setPassword={setPassword}
+      <Login email={email} 
+      setEmail={setEmail} 
+      password={password} 
+      setPassword={setPassword}
       handleLogin={handleLogin}
       handleSignUp={handleSignUp}
       hasAccount={hasAccount}

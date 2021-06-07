@@ -135,9 +135,6 @@ form label:hover{
 }
 
 
-
-
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -156,6 +153,7 @@ button {
   background: #603bbb;
   cursor: pointer;
 }
+
 
 .login {
   width: 100%;
@@ -222,6 +220,9 @@ button {
   transition: all 400ms ease-in-out;
 }
 
+.btnContainer button:hover{
+  background-color: rgba(14, 8, 26, 0.9);
+}
 .login .loginContainer .btnContainer p span:hover {
   color: red;
 }
